@@ -8,6 +8,7 @@ Entrega de Programacion Asistida de Aplicaciones sobre manejo de estado, persist
 - `parte_b_conexion`: comparacion visual entre una consulta con `Future` y una observacion con `Stream` y Cubit.
 - `RESPUESTAS.md`: ocho respuestas, comparacion entre administradores y evidencia de los `git diff`.
 - `GUIA_DEMO.md`: pasos exactos para grabar el unico artefacto que requiere un telefono real.
+- `Informe_Deber1.docx`: informe tecnico con arquitectura, decisiones, pruebas y comandos de ejecucion.
 
 ## Ejecutar la Parte A
 
