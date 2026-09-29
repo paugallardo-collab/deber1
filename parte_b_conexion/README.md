@@ -1,17 +1,21 @@
-# parte_b_conexion
+# Parte B Conexion
 
-Comparacion de Future y Stream con arquitectura limpia.
+Esta app compara una consulta puntual con `Future` y una observacion continua con `Stream`. Las dos experiencias usan el mismo contrato de dominio y el mismo repositorio de `connectivity_plus`.
 
-## Getting Started
+## Ejecutar
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+La pestana **Con Future** cambia solo al presionar **Consultar ahora**. La pestana **Con Stream** se actualiza cuando el sistema operativo informa un cambio de red.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Verificar
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter analyze
+flutter test
+```
+
+`connectivity_plus` aparece en un solo archivo dentro de `lib`: `data/repositories/conexion_plus_repository.dart`. El `ConexionCubit` cancela su `StreamSubscription` en `close()`.
